@@ -13,8 +13,8 @@
 		0735B1BC2388DA5F002C98E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0735B1BA2388DA5F002C98E9 /* Main.storyboard */; };
 		0735B1BE2388DA60002C98E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0735B1BD2388DA60002C98E9 /* Assets.xcassets */; };
 		0735B1C12388DA60002C98E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0735B1BF2388DA60002C98E9 /* LaunchScreen.storyboard */; };
-		07632341239BB8BB000809AE /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 07632340239BB8BB000809AE /* RxSwift */; };
-		07632343239BB8BB000809AE /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 07632342239BB8BB000809AE /* RxCocoa */; };
+		07632346239BC0EF000809AE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 07632345239BC0EF000809AE /* Alamofire */; };
+		07632349239BC15D000809AE /* FragileExpressUI in Frameworks */ = {isa = PBXBuildFile; productRef = 07632348239BC15D000809AE /* FragileExpressUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07632343239BB8BB000809AE /* RxCocoa in Frameworks */,
-				07632341239BB8BB000809AE /* RxSwift in Frameworks */,
+				07632349239BC15D000809AE /* FragileExpressUI in Frameworks */,
+				07632346239BC0EF000809AE /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +48,7 @@
 				0735B1CC23894889002C98E9 /* FragileExpressUI */,
 				0735B1B32388DA5F002C98E9 /* FragileExpress */,
 				0735B1B22388DA5F002C98E9 /* Products */,
+				07632347239BC15D000809AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +74,13 @@
 			path = FragileExpress;
 			sourceTree = "<group>";
 		};
+		07632347239BC15D000809AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -90,8 +98,8 @@
 			);
 			name = FragileExpress;
 			packageProductDependencies = (
-				07632340239BB8BB000809AE /* RxSwift */,
-				07632342239BB8BB000809AE /* RxCocoa */,
+				07632345239BC0EF000809AE /* Alamofire */,
+				07632348239BC15D000809AE /* FragileExpressUI */,
 			);
 			productName = FragileExpress;
 			productReference = 0735B1B12388DA5F002C98E9 /* FragileExpress.app */;
@@ -122,7 +130,7 @@
 			);
 			mainGroup = 0735B1A82388DA5F002C98E9;
 			packageReferences = (
-				0763233F239BB8BB000809AE /* XCRemoteSwiftPackageReference "RxSwift" */,
+				07632344239BC0EF000809AE /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 0735B1B22388DA5F002C98E9 /* Products */;
 			projectDirPath = "";
@@ -351,26 +359,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0763233F239BB8BB000809AE /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		07632344239BC0EF000809AE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
+				minimumVersion = 4.9.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		07632340239BB8BB000809AE /* RxSwift */ = {
+		07632345239BC0EF000809AE /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0763233F239BB8BB000809AE /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
+			package = 07632344239BC0EF000809AE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
-		07632342239BB8BB000809AE /* RxCocoa */ = {
+		07632348239BC15D000809AE /* FragileExpressUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0763233F239BB8BB000809AE /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
+			productName = FragileExpressUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

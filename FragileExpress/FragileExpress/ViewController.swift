@@ -1,6 +1,6 @@
 import UIKit
-import RxSwift
-import RxCocoa
+import Alamofire
+import FragileExpressUI
 
 class ViewController: UIViewController {
 
@@ -8,8 +8,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let relay = PublishRelay<Int>()
-        relay.accept(1)
+        Alamofire.request("https://api.fragile-exp.com/orders").response { response in
+            debugPrint(response)
+        }
+        let backgroundColor = FragileExpressUI.Color.background
+        view.backgroundColor = backgroundColor
     }
 }
 
